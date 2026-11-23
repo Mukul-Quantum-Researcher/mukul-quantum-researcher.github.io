@@ -1,0 +1,229 @@
+[
+  {
+    "asset": "vo2-microscope",
+    "source": "Mukul_MTech_Thesis.pdf",
+    "pdf_page": 13,
+    "image_index": 0,
+    "caption": "Optical microscope image of a VO2 wire; original scale bar retained.",
+    "original_size": [
+      1938,
+      1311
+    ]
+  },
+  {
+    "asset": "vo2-indentation-setup",
+    "source": "Mukul_MTech_Thesis.pdf",
+    "pdf_page": 15,
+    "image_index": 0,
+    "caption": "AFM nanoindentation setup.",
+    "original_size": [
+      2343,
+      1859
+    ]
+  },
+  {
+    "asset": "vo2-raman-phase-a",
+    "source": "Mukul_MTech_Thesis.pdf",
+    "pdf_page": 17,
+    "image_index": 0,
+    "caption": "One panel from the Raman phase comparison; see the full report for all panels.",
+    "original_size": [
+      516,
+      429
+    ]
+  },
+  {
+    "asset": "vo2-size-raman",
+    "source": "Mukul_MTech_Thesis.pdf",
+    "pdf_page": 18,
+    "image_index": 0,
+    "caption": "Raman spectra comparing wires of different widths.",
+    "original_size": [
+      3933,
+      1060
+    ]
+  },
+  {
+    "asset": "vo2-substrate-raman",
+    "source": "Mukul_MTech_Thesis.pdf",
+    "pdf_page": 18,
+    "image_index": 1,
+    "caption": "Raman comparison across substrates.",
+    "original_size": [
+      2026,
+      987
+    ]
+  },
+  {
+    "asset": "vo2-stretching",
+    "source": "Mukul_MTech_Thesis.pdf",
+    "pdf_page": 19,
+    "image_index": 0,
+    "caption": "Raman spectra before and after 15 mm PDMS extension.",
+    "original_size": [
+      867,
+      703
+    ]
+  },
+  {
+    "asset": "vo2-force-displacement",
+    "source": "Mukul_MTech_Thesis.pdf",
+    "pdf_page": 20,
+    "image_index": 0,
+    "caption": "AFM force-displacement curves and indentation image.",
+    "original_size": [
+      3603,
+      1639
+    ]
+  },
+  {
+    "asset": "photonics-mode",
+    "source": "Mukul_Photonics Project.pdf",
+    "pdf_page": 6,
+    "image_index": 0,
+    "caption": "Simulated straight-waveguide mode profile.",
+    "original_size": [
+      396,
+      356
+    ]
+  },
+  {
+    "asset": "photonics-radius-sweep",
+    "source": "Mukul_Photonics Project.pdf",
+    "pdf_page": 10,
+    "image_index": 3,
+    "caption": "One transmission curve from the ring-radius sweep.",
+    "original_size": [
+      600,
+      400
+    ]
+  },
+  {
+    "asset": "photonics-passive-ring",
+    "source": "Mukul_Photonics Project.pdf",
+    "pdf_page": 13,
+    "image_index": 0,
+    "caption": "Passive resonance for coupling coefficient 0.0076.",
+    "original_size": [
+      600,
+      400
+    ]
+  },
+  {
+    "asset": "photonics-coupling",
+    "source": "Mukul_Photonics Project.pdf",
+    "pdf_page": 15,
+    "image_index": 0,
+    "caption": "Simulated coupling coefficient versus wavelength.",
+    "original_size": [
+      600,
+      400
+    ]
+  },
+  {
+    "asset": "photonics-neff-bias",
+    "source": "Mukul_Photonics Project.pdf",
+    "pdf_page": 20,
+    "image_index": 0,
+    "caption": "Effective index versus reverse bias from the report.",
+    "original_size": [
+      600,
+      400
+    ]
+  },
+  {
+    "asset": "photonics-active-transmission",
+    "source": "Mukul_Photonics Project.pdf",
+    "pdf_page": 21,
+    "image_index": 0,
+    "caption": "Simulated transmission at several DC reverse biases.",
+    "original_size": [
+      600,
+      486
+    ]
+  },
+  {
+    "asset": "photonics-interconnect",
+    "source": "Mukul_Photonics Project.pdf",
+    "pdf_page": 21,
+    "image_index": 1,
+    "caption": "Lumerical INTERCONNECT ring-modulator model.",
+    "original_size": [
+      794,
+      592
+    ]
+  },
+  {
+    "asset": "purcell-layout",
+    "source": "QuantWare_Interview_Presentation.pdf",
+    "pdf_page": 6,
+    "image_index": 0,
+    "caption": "Qiskit Metal layout of the coupled readout/filter structure.",
+    "original_size": [
+      814,
+      583
+    ]
+  },
+  {
+    "asset": "purcell-hfss",
+    "source": "QuantWare_Interview_Presentation.pdf",
+    "pdf_page": 6,
+    "image_index": 1,
+    "caption": "HFSS geometry of the feedline, filter and readout resonator.",
+    "original_size": [
+      1081,
+      447
+    ]
+  },
+  {
+    "asset": "purcell-notch-initial",
+    "source": "QuantWare_Interview_Presentation.pdf",
+    "pdf_page": 8,
+    "image_index": 0,
+    "caption": "Initial simulated transfer-impedance notch.",
+    "original_size": [
+      1561,
+      449
+    ]
+  },
+  {
+    "asset": "purcell-notch-middle",
+    "source": "QuantWare_Interview_Presentation.pdf",
+    "pdf_page": 9,
+    "image_index": 0,
+    "caption": "Transfer-impedance notch after changing the shorted lengths.",
+    "original_size": [
+      1561,
+      449
+    ]
+  },
+  {
+    "asset": "purcell-notch-final",
+    "source": "purcell filter designs\\Purcell filter results\\low frequency impedence 6 Ghz plot project 14.png",
+    "caption": "Project14 transfer-impedance plot; marked notch at 6.8256 GHz."
+  },
+  {
+    "asset": "ecr-design-space",
+    "source": "Superconducting-qubits-hardware/notebooks/ECR_gate_qutip_simulation.ipynb",
+    "cell_index": 24,
+    "execution": "Rerun on 2026-11-23"
+  },
+  {
+    "asset": "ecr-pulses",
+    "source": "Superconducting-qubits-hardware/notebooks/ECR_gate_qutip_simulation.ipynb",
+    "cell_index": 30,
+    "execution": "Rerun on 2026-11-23"
+  },
+  {
+    "asset": "ecr-truth-table",
+    "source": "Superconducting-qubits-hardware/notebooks/ECR_gate_qutip_simulation.ipynb",
+    "cell_index": 33,
+    "execution": "Rerun on 2026-11-23"
+  },
+  {
+    "asset": "jtwpa-dispersion",
+    "source": "snail-jtwpa-design/notebooks/SNAIL_JTWPA_parameter_design.ipynb",
+    "cell_index": 13,
+    "execution": "Rerun on 2026-11-23"
+  }
+]

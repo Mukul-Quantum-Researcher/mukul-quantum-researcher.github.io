@@ -1,0 +1,142 @@
+% Academic CV. Source layout based on the supplied resume.cls.
+\documentclass[margin,line]{resume}
+\usepackage{url}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\definecolor{linkblue}{RGB}{23,70,106}
+\hypersetup{colorlinks=true,urlcolor=linkblue,pdfauthor={Mukul},pdftitle={Mukul -- Academic CV},pdfsubject={Superconducting quantum hardware and device physics}}
+\urlstyle{same}
+\input{glyphtounicode}
+\pdfgentounicode=1
+\setlength{\textheight}{260mm}
+\setlength{\paperwidth}{210mm}
+\setlength{\paperheight}{297mm}
+\pdfpagewidth=\paperwidth
+\pdfpageheight=\paperheight
+\renewcommand{\labelitemi}{$\bullet$}
+\setlength{\leftmargini}{1.4em}
+\makeatletter
+\g@addto@macro\@listi{\setlength{\itemsep}{2pt}\setlength{\topsep}{3pt}\setlength{\parsep}{0pt}}
+\makeatother
+\setlength{\parskip}{3pt}
+\newcommand{\projectlink}[2]{\href{https://mukul-quantum-researcher.github.io/projects/#1/}{#2}}
+\newcommand{\cvheading}[1]{\section{\mysidestyle #1}}
+
+\begin{document}
+\name{\Large Mukul}
+\begin{resume}
+
+\cvheading{Contact\\Information}
+Bengaluru, India \hfill \href{mailto:malikmukul2000@gmail.com}{malikmukul2000@gmail.com}\\
+Website: \href{https://mukul-quantum-researcher.github.io/}{mukul-quantum-researcher.github.io}\\
+GitHub: \href{https://github.com/Mukul-Quantum-Researcher}{github.com/Mukul-Quantum-Researcher}\\
+LinkedIn: \href{https://www.linkedin.com/in/mukul-mukul-47b9b1192/}{mukul-mukul-47b9b1192}
+
+\cvheading{Research\\Profile}
+Project Engineer at C-DAC working on superconducting quantum circuits. My experience includes circuit and electromagnetic simulation, cross-resonance gate modelling, readout-filter design and decoherence analysis. I completed an M.Tech at IISc with research in VO$_2$ phase behaviour and coursework in quantum technology. I am interested in PhD research that connects device design, quantum control and experiments on superconducting processors.
+
+\cvheading{Research\\Interests}
+Superconducting circuit QED; two-qubit gates and control; readout and calibration; noise and decoherence; parametric amplification. Related interests include semiconductor quantum devices and low-dimensional materials.
+
+\cvheading{Education}
+\textbf{Indian Institute of Science, Bengaluru} \hfill \textbf{2023--2025}\\
+\textsl{M.Tech in Semiconductor Technology; Minor in Quantum Technology}\\
+CGPA: 7.8/10. Thesis supervisor: Prof. Pavan Nukala.\\
+Thesis: \projectlink{vo2-thesis}{Stress-Induced Phase Transitions in Vanadium Dioxide (VO$_2$) Nanowires}.\\
+Completed 84 credits, including 21 credits in Quantum Technology beyond degree requirements. IISc M.Tech Graduate Fellowship: INR 288,000.
+
+\vspace{1mm}
+\textbf{DCR University of Science and Technology, Sonipat} \hfill \textbf{2019--2023}\\
+\textsl{B.Tech in Mechanical Engineering}\\
+CGPA: 7.75/10.
+
+\cvheading{Research\\Experience}
+\textbf{Project Engineer, Quantum Computing Group}\\
+\textsl{C-DAC, Bengaluru} \hfill \textbf{July 2025--Present}
+\begin{itemize}
+\item Contribute to superconducting quantum processor development under India's National Quantum Mission, with work on circuit design, simulation and pulse-level modelling.
+\item Compare cross-resonance and parametric gate approaches, examining gate duration, residual ZZ, leakage and coherence trade-offs.
+\item Design and simulate qubits, resonators, tunable couplers and Purcell-filter structures using circuit and electromagnetic tools, including Qiskit Metal, Ansys HFSS and Keysight ADS Quantum Pro.
+\item Build coupled-transmon CR/ECR simulations, including static-spectrum checks, pulse calibration, leakage analysis and approximate circuit targets for layout. \projectlink{cr-ecr}{Project and code}.
+\item Study SNAIL JTWPA parameter design and dispersion in Python and develop a JosephsonCircuits.jl nonlinear workflow; pumped circuit validation remains in progress. \projectlink{snail-jtwpa}{Design study}.
+\item Model noise and decoherence with open-system methods and study qubit characterisation protocols, including T$_1$/T$_2$, gate-fidelity estimation and randomised benchmarking. Contribute to hardware-aware Max-Cut work and give internal seminars on circuit QED and decoherence.
+\end{itemize}
+
+\textbf{Quantum Algorithms Intern, Entangled Ket} \hfill \textbf{Aug--Oct 2024}
+\begin{itemize}
+\item Implemented variational quantum algorithms with hardware noise models and limited circuit depth; developed educational material on hardware-aware benchmarking.
+\end{itemize}
+
+\cvheading{Selected\\Research\\Projects}
+\begin{minipage}{\linewidth}
+\textbf{Cross-resonance and echoed CR gate simulation} \hfill \projectlink{cr-ecr}{Details} $\vert$ \href{https://github.com/Mukul-Quantum-Researcher/Superconducting-qubits-hardware}{Code}
+\begin{itemize}
+\item Built exact-cosine static checks and three-level Duffing pulse models for coupled transmons in QuTiP, alongside an earlier scqubits tutorial.
+\item Calculated dressed levels and ZZ, checked effective CR rates, compared rotating- and lab-frame dynamics, and calibrated an echoed sequence across a detuning/coupling scan.
+\item Selected simulated example: approximately 154 ns ECR duration, 99.685\% coherent average gate fidelity after virtual-Z optimisation and average leakage of about $5.7\times10^{-5}$.
+\end{itemize}
+\end{minipage}\par\vspace{3pt}
+
+\begin{minipage}{\linewidth}
+\textbf{MTL-coupled Purcell-filter design} \hfill \projectlink{purcell-filter}{Details} $\vert$ \href{https://github.com/Mukul-Quantum-Researcher/purcell-filter-design}{Design files}
+\begin{itemize}
+\item Implemented a feedline/filter/readout-resonator structure in Qiskit Metal and Ansys HFSS, using a multiconductor transmission-line coupling section to create an intrinsic notch.
+\item Iterated shorted-end lengths and examined S/Z-parameter sweeps. The simulations show the notch moving from approximately 11.42 GHz to 8.35 GHz and then 6.83 GHz.
+\end{itemize}
+\end{minipage}\par\vspace{3pt}
+
+\begin{minipage}{\linewidth}
+\textbf{SNAIL JTWPA parameter design} \hfill \projectlink{snail-jtwpa}{Details} $\vert$ \href{https://github.com/Mukul-Quantum-Researcher/snail-jtwpa-design}{Code}
+\begin{itemize}
+\item Developed a Python workflow for stable SNAIL operating points, Taylor coefficients, junction parameters, line impedance, discrete Bloch dispersion and cold phase mismatch.
+\item Checked finite loop-inductance sensitivity and exported a provisional parameter handoff. Nonlinear circuit and pumped-gain validation in Julia remain in progress.
+\end{itemize}
+\end{minipage}\par\vspace{3pt}
+
+\begin{minipage}{\linewidth}
+\textbf{VO$_2$ phase behaviour and stress-transfer experiments} \hfill \projectlink{vo2-thesis}{Details} $\vert$ \href{https://mukul-quantum-researcher.github.io/assets/documents/Mukul-VO2-Thesis.pdf}{Thesis}
+\begin{itemize}
+\item Investigated VO$_2$ wires using Raman spectroscopy, stretching on PDMS and AFM nanoindentation during my M.Tech at IISc.
+\item Observed width- and substrate-dependent Raman responses under optical excitation. Identified poor strain transfer on PDMS and AFM probe/loading limits; the experiments did not demonstrate a controlled stress-induced transition.
+\end{itemize}
+\end{minipage}\par\vspace{3pt}
+
+\begin{minipage}{\linewidth}
+\textbf{Silicon-on-insulator ring-modulator simulation} \hfill \projectlink{ring-modulator}{Details} $\vert$ \href{https://mukul-quantum-researcher.github.io/assets/documents/Mukul-Ring-Modulator-Report.pdf}{Report}
+\begin{itemize}
+\item Independently completed a photonics design workflow using Lumerical MODE, FDTD, CHARGE and INTERCONNECT, linking waveguide modes, coupling, PN-junction depletion and ring transmission near 1550 nm.
+\item Optimised the passive ring and examined DC-bias-dependent transmission. The passive model gives Q of approximately $5.8\times10^4$ with an FSR near 11 nm.
+\end{itemize}
+\end{minipage}\par\vspace{3pt}
+
+\cvheading{Other\\Projects}
+\begin{itemize}
+\item \textbf{Hardware-constrained state preparation:} Five-qubit screening-task solution using X, H, RZ and CX gates on a specified connectivity graph; submitted circuit depth 23. \href{https://github.com/Mukul-Quantum-Researcher/QOSF-Cohort-10}{Notebook}.
+\item \textbf{Classiq harmonic-oscillator challenge:} Implemented a quantum differential-equation approach and examined energy estimates and circuit synthesis cost. \href{https://github.com/Mukul-Quantum-Researcher/Q-SITE-Classiq-Open-Challenge}{Submission}.
+\item \textbf{Fabrication and characterisation coursework:} Semiconductor pn-junction fabrication using lithography and thin-film processing; graphene characterisation using Raman spectroscopy and AFM.
+\end{itemize}
+
+\cvheading{Technical\\Skills}
+\textbf{Modelling and programming:} Python, QuTiP, Qiskit, scqubits, NumPy, SciPy, SymPy, Matplotlib, PennyLane; Julia and JosephsonCircuits.jl; MATLAB, Git and \LaTeX.\\
+\textbf{Device and EM tools:} Qiskit Metal, Ansys HFSS/Q3D, Keysight ADS Quantum Pro, KLayout, pyAEDT/Elmer and scikit-rf; Ansys Lumerical.\\
+\textbf{Experimental background:} Raman spectroscopy, AFM, fabrication coursework, lithography, thin-film deposition and etching.\\
+\textbf{Physics:} Circuit QED, coupled-transmon Hamiltonians, pulse dynamics, open quantum systems, semiconductor device physics and integrated photonics.
+
+\cvheading{Selected\\Coursework}
+Quantum measurement and sensing; quantum optics; open quantum systems; quantum communication and cryptography; introduction to quantum computation; scientific computing with quantum algorithms; integrated photonics; quantum transport in low-dimensional materials; semiconductor device physics; advanced micro- and nanofabrication.
+
+\cvheading{Achievements}
+\begin{itemize}
+\item GATE Mechanical Engineering, 2023: All India Rank 792.
+\item Winner, Haiqu Track, Q Site Open Challenge, 2024.
+\item 9th place globally, QCoder Programming Contest.
+\end{itemize}
+
+\cvheading{Selected\\Talks}
+\begin{itemize}
+\item \textsl{Superconducting Qubits: Coherence, Calibration, and Circuit QED}. C-DAC internal seminar, 2025.
+\item \textsl{Noise Channels and Decoherence Mechanisms in Superconducting Quantum Devices}. C-DAC internal seminar, 2025.
+\end{itemize}
+
+\end{resume}
+\end{document}
