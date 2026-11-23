@@ -58,7 +58,7 @@ CGPA: 7.75/10.
 \item Compare cross-resonance and parametric gate approaches, examining gate duration, residual ZZ, leakage and coherence trade-offs.
 \item Design and simulate qubits, resonators, tunable couplers and Purcell-filter structures using circuit and electromagnetic tools, including Qiskit Metal, Ansys HFSS and Keysight ADS Quantum Pro.
 \item Build coupled-transmon CR/ECR simulations, including static-spectrum checks, pulse calibration, leakage analysis and approximate circuit targets for layout. \projectlink{cr-ecr}{Project and code}.
-\item Study SNAIL JTWPA parameter design and dispersion in Python and develop a JosephsonCircuits.jl nonlinear workflow; pumped circuit validation remains in progress. \projectlink{snail-jtwpa}{Design study}.
+\item Simulate JTWPA gain under different readout-chain terminations in JosephsonCircuits.jl, comparing ideal loads, circulator models and reflectionless filtering. \projectlink{reflectionless-filter}{Project and code}.
 \item Model noise and decoherence with open-system methods and study qubit characterisation protocols, including T$_1$/T$_2$, gate-fidelity estimation and randomised benchmarking. Contribute to hardware-aware Max-Cut work and give internal seminars on circuit QED and decoherence.
 \end{itemize}
 
@@ -78,6 +78,14 @@ CGPA: 7.75/10.
 \end{minipage}\par\vspace{3pt}
 
 \begin{minipage}{\linewidth}
+\textbf{Qubit spectroscopy and Rabi chevrons} \hfill \projectlink{qubit-spectroscopy}{Details} $\vert$ \href{https://github.com/Mukul-Quantum-Researcher/Superconducting-qubits-hardware/blob/main/notebooks/qubit_spectroscopy.ipynb}{Code}
+\begin{itemize}
+\item Simulated four-level transmon spectroscopy and Rabi dynamics in QuTiP, with relaxation, dephasing, finite-temperature excitation and quasi-static frequency offsets.
+\item Fitted frequency--duration chevrons and pulse-duration data; recovered the example's approximately 5.011 GHz transition and 5 MHz Rabi frequency from saved simulated populations.
+\end{itemize}
+\end{minipage}\par\vspace{3pt}
+
+\begin{minipage}{\linewidth}
 \textbf{MTL-coupled Purcell-filter design} \hfill \projectlink{purcell-filter}{Details} $\vert$ \href{https://github.com/Mukul-Quantum-Researcher/purcell-filter-design}{Design files}
 \begin{itemize}
 \item Implemented a feedline/filter/readout-resonator structure in Qiskit Metal and Ansys HFSS, using a multiconductor transmission-line coupling section to create an intrinsic notch.
@@ -86,10 +94,10 @@ CGPA: 7.75/10.
 \end{minipage}\par\vspace{3pt}
 
 \begin{minipage}{\linewidth}
-\textbf{SNAIL JTWPA parameter design} \hfill \projectlink{snail-jtwpa}{Details} $\vert$ \href{https://github.com/Mukul-Quantum-Researcher/snail-jtwpa-design}{Code}
+\textbf{JTWPA gain with reflectionless filtering} \hfill \projectlink{reflectionless-filter}{Details} $\vert$ \href{https://github.com/Mukul-Quantum-Researcher/reflectionless-filter-jtwpa}{Code}
 \begin{itemize}
-\item Developed a Python workflow for stable SNAIL operating points, Taylor coefficients, junction parameters, line impedance, discrete Bloch dispersion and cold phase mismatch.
-\item Checked finite loop-inductance sensitivity and exported a provisional parameter handoff. Nonlinear circuit and pumped-gain validation in Julia remain in progress.
+\item Compared one JosephsonCircuits JTWPA under ideal loads, nonideal circulator models and a reflectionless-filter/circulator cascade using harmonic balance and small-signal analysis.
+\item Built frequency-dependent termination impedances from surrogate S-parameters and examined gain and external reflection. The study uses model networks rather than the paper's measured Touchstone data.
 \end{itemize}
 \end{minipage}\par\vspace{3pt}
 
@@ -123,19 +131,13 @@ CGPA: 7.75/10.
 \textbf{Physics:} Circuit QED, coupled-transmon Hamiltonians, pulse dynamics, open quantum systems, semiconductor device physics and integrated photonics.
 
 \cvheading{Selected\\Coursework}
-Quantum measurement and sensing; quantum optics; open quantum systems; quantum communication and cryptography; introduction to quantum computation; scientific computing with quantum algorithms; integrated photonics; quantum transport in low-dimensional materials; semiconductor device physics; advanced micro- and nanofabrication.
+Quantum measurement and sensing; quantum optics; open quantum systems; quantum computation; integrated photonics; quantum transport; semiconductor device physics; micro- and nanofabrication.
 
 \cvheading{Achievements}
 \begin{itemize}
 \item GATE Mechanical Engineering, 2023: All India Rank 792.
 \item Winner, Haiqu Track, Q Site Open Challenge, 2024.
 \item 9th place globally, QCoder Programming Contest.
-\end{itemize}
-
-\cvheading{Selected\\Talks}
-\begin{itemize}
-\item \textsl{Superconducting Qubits: Coherence, Calibration, and Circuit QED}. C-DAC internal seminar, 2025.
-\item \textsl{Noise Channels and Decoherence Mechanisms in Superconducting Quantum Devices}. C-DAC internal seminar, 2025.
 \end{itemize}
 
 \end{resume}

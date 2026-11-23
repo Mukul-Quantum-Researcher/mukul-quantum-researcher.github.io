@@ -221,9 +221,25 @@
     "execution": "Rerun on 2026-11-23"
   },
   {
-    "asset": "jtwpa-dispersion",
-    "source": "snail-jtwpa-design/notebooks/SNAIL_JTWPA_parameter_design.ipynb",
-    "cell_index": 13,
-    "execution": "Rerun on 2026-11-23"
+    "asset": "reflectionless-recorded-gain",
+    "source": "kedziora_jtwpa_fig1_josephsoncircuits.ipynb",
+    "cell_index": 26,
+    "status": "Recorded output; circulator-only gain run has a convergence warning."
+  },
+  {
+    "asset": "reflectionless-reflection",
+    "source": "kedziora_jtwpa_fig1_josephsoncircuits.ipynb",
+    "cell_index": 29,
+    "status": "Supplied surrogate-network calculation."
+  },
+  {
+    "asset": "spectroscopy-chevron",
+    "source": "qubit_spectroscopy.ipynb",
+    "processing": "Replotted saved simulated populations with recomputed fits using scripts/analyse_spectroscopy.py; no new trajectory integration."
+  },
+  {
+    "asset": "spectroscopy-rabi",
+    "source": "qubit_spectroscopy.ipynb",
+    "processing": "Replotted saved simulated populations with recomputed fits using scripts/analyse_spectroscopy.py; no new trajectory integration."
   }
 ]
